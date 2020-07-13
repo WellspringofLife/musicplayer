@@ -2,6 +2,7 @@ import pygame
 import tkinter
 import os
 
+#ys
 player = tkinter.Tk()
 
 player.title("Player")
@@ -11,8 +12,6 @@ os.chdir("C:\\Users\\vivia\\PycharmProjects\\musicplayer\\venv\\music")
 songlist = os.listdir()
 
 volume = tkinter.Scale(player, from_ = 0.0, to_ =1.0, orient = tkinter.VERTICAL, resolution = 0.1 )
-
-
 
 playlist = tkinter.Listbox(player, highlightcolor="red", selectmode=tkinter.SINGLE)
 for item in songlist:
